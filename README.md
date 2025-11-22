@@ -1,2 +1,2 @@
-##Global Earthquake-Tsunami Risk Assessment Classifier##
+##Global Earthquake-Tsunami Risk Assessment Classifier
 
