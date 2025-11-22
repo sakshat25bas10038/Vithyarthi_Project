@@ -17,4 +17,28 @@ Trained model used for probability predictiction of dataset - Probability output
 Scatter plot with earthquake magnitude and depth as factors - (matplotlib module)
 
 ## Technologies and Tools Used
-1) 
+### 1) Modules Used :-
+Numpy, Matplotlib, Scikit-learn, Pandas are used for data handling, modelling and visualization. 
+### 2) Machine Learning Model :-
+Logistic Regression Model is trained for simple, interpretable linear classifier ideal for demonstrating foundational ML on binary outcomes.
+### 3) Execution Environment :-
+Google Collab is used as it is organised and freely accessible.
+
+## Steps to Install & Run the Project
+### Prequesities :-
+You must have Kaggle account and an API Key configured to download the dataset using the opendatasets library. Open the Tsunami_Classifier_Colab.ipynb file in Google Colab.
+### Execution :-
+#### 1) Install Libraries: Run the initial cell to install dependencies
+##### !pip install pandas numpy scikit-learn matplotlib
+##### !pip install opendatasets kaggle
+#### 2) Data Acquisition: Run the cell to download the dataset. You will be prompted to enter your Kaggle username and Key
+##### import opendatasets as od
+##### od.download("https://www.kaggle.com/datasets/ahmeduzaki/global-earthquake-tsunami-risk-assessment-dataset")
+#### 3) Data Loading: Run the cell to load the downloaded CSV file into a DataFrame
+##### import pandas as pd
+##### data=pd.read_csv("/content/global-earthquake-tsunami-risk-assessment-dataset/earthquake_data_tsunami.csv")
+#### 4) Model Training: Run the cell containing the Logistic Regression training block (Data Split, Scaling, Training, and Evaluation). This output includes the final model accuracy (e.g., Accuracy Score: 0.8265)
+#### 5) Prediction & Visualization (Section 3): Run the final cells to generate the predicted results and display the Magnitude vs. Depth scatter plot
+
+
+
