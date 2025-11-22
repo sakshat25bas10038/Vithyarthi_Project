@@ -1,2 +1,2 @@
-# Vithyarthi_Project
-Machine Learning Project
+##Global Earthquake-Tsunami Risk Assessment Classifier##
+
