@@ -4,23 +4,23 @@
 This project implements a foundational Machine Learning system designed to assess the potential risk of an earthquake generating a destructive tsunami. It performs Binary Classification using key seismic features to predict the Tsunami Indicator (tsunami: 1 for Tsunami, 0 for No Tsunami). The entire workflow is executed within a single Google Colab environment, with the model trained directly on the uploaded data using Logistic Regression.
 
 ## Features
-### 1) Data uploads and cleaning :-
+#### 1) Data uploads and cleaning :-
 #### Manually upload the csv file dataset.csv (opendatasets module) - "https://www.kaggle.com/datasets/ahmeduzaki/global-earthquake-tsunami-risk-assessment-dataset"
 #### Cleaning of NaN values in data set (Pandas module) - After reading the csv file no NaN values found
 #### Splitting of data in 80/20 ratio (scikit-learn module) - By importing train_test_split
-### 2) Logistic Regression Model :-
+#### 2) Logistic Regression Model :-
 #### Applies Feature Scaling - import StandardScaler
 #### Model training - import LogisticRegression
-### 3) Prediction & Visualization :-
+#### 3) Prediction & Visualization :-
 #### Trained model used for probability predictiction of dataset - Probability output
 #### Scatter plot with earthquake magnitude and depth as factors - (matplotlib module)
 
 ## Technologies and Tools Used
-### 1) Modules Used :-
+#### 1) Modules Used :-
 Numpy, Matplotlib, Scikit-learn, Pandas are used for data handling, modelling and visualization. 
-### 2) Machine Learning Model :-
+#### 2) Machine Learning Model :-
 Logistic Regression Model is trained for simple, interpretable linear classifier ideal for demonstrating foundational ML on binary outcomes.
-### 3) Execution Environment :-
+#### 3) Execution Environment :-
 Google Collab is used as it is organised and freely accessible.
 
 ## Steps to Install & Run the Project
@@ -42,7 +42,7 @@ You must have Kaggle account and an API Key configured to download the dataset u
 ## Instructions on Testing
 The testing approach for this classification model is quantitative and integrated directly into MODEL TRAINING SECTION of the notebook. The model is tested against 20% of the data that it has never seen (unseen test set) to ensure generalization.
 
-### The user must examine the output of Model Training, specifically the MODEL EVALUATION ON TEST DATA block, to verify the following metrics:-
+#### The user must examine the output of Model Training, specifically the MODEL EVALUATION ON TEST DATA block, to verify the following metrics:-
 #### 1) Accuracy Score: Confirms the overall proportion of correctly classified events (target goal is 0.82).
 #### 2) Classification Report: Assesses performance for each class (Tsunami [1] vs. No Tsunami [0]). Key metrics to check are:
 ##### Recall for Class 1 (Tsunami): Measures how many actual tsunami events the model successfully identified (critical for an early warning system).
