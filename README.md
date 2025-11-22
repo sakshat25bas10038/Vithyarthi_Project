@@ -11,7 +11,6 @@ This project implements a foundational Machine Learning system designed to asses
 ### 2) Logistic Regression Model :-
 #### Applies Feature Scaling - import StandardScaler
 #### Model training - import LogisticRegression
-#### Classificatiion - - Accuracy Score 0.8265.
 ### 3) Prediction & Visualization :-
 #### Trained model used for probability predictiction of dataset - Probability output
 #### Scatter plot with earthquake magnitude and depth as factors - (matplotlib module)
